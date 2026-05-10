@@ -1,10 +1,10 @@
 # Proyecto MLOps - Predicción de Churn
 
 ## Alumno
-Samuel Anibal Fajardo Reinoso
-Alejandro Vergara
-Marlene Jimenez
-Manuel Resquin
+- Samuel Anibal Fajardo Reinoso
+- Alejandro Vergara
+- Marlene Jimenez
+- Manuel Resquin
 
 ## Materia
 Laboratorio de Minería de Datos
