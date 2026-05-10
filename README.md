@@ -2,6 +2,9 @@
 
 ## Alumno
 Samuel Anibal Fajardo Reinoso
+Alejandro Vergara
+Marlene Jimenez
+Manuel Resquin
 
 ## Materia
 Laboratorio de Minería de Datos
@@ -34,3 +37,25 @@ reports/
 tests/
 README.md
 requirements.txt
+## Reproducibilidad
+
+El proyecto utiliza:
+
+- Git y GitHub para versionado de código
+- MLflow para tracking de experimentos
+- DVC para versionado de datasets
+- requirements.txt para reproducibilidad
+  del entorno
+
+## Modelos evaluados
+
+- Logistic Regression
+- Random Forest
+
+## Métricas utilizadas
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
