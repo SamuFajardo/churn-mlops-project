@@ -19,8 +19,13 @@ mlflow.db
 *.h5
 *.pt
 
-# Datos
-data/
+# Datos (IMPORTANTE)
+data/*.csv
+data/*.parquet
+data/*.json
+
+# PERO NO ignorar DVC metadata
+!*.dvc
 
 # VSCode
 .vscode/
