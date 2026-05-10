@@ -1,6 +1,6 @@
 # Proyecto MLOps - Predicción de Churn
 
-## Alumno
+## Alumnos: 
 - Samuel Anibal Fajardo Reinoso
 - Alejandro Vergara
 - Marlene Jimenez
