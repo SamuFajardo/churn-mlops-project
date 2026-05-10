@@ -1,0 +1,30 @@
+# Entornos virtuales
+venv/
+env/
+myenv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Modelos pesados
+*.pkl
+*.h5
+*.pt
+
+# Datos
+data/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
