@@ -4,7 +4,6 @@
 - Samuel Anibal Fajardo Reinoso
 - Alejandro Vergara
 - Marlene Jimenez
-- Manuel Resquin
 
 ## Materia
 Laboratorio de Minería de Datos
