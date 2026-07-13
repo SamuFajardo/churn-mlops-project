@@ -1,61 +1,58 @@
-# Proyecto MLOps - Predicción de Churn
+# Proyecto MLOps - Predicción de Churn de Clientes
 
-## Alumnos: 
-- Samuel Anibal Fajardo Reinoso
+## Equipo de Trabajo (Alumnos)
+- Samuel Aníbal Fajardo Reinoso
 - Alejandro Vergara
 - Marlene Jimenez
-- Manuel Resquin
 
-## Materia
-Laboratorio de Minería de Datos
+**Materia:** Laboratorio de Minería de Datos
 
-## Objetivo del proyecto
-El objetivo del proyecto es desarrollar una solución de Machine Learning
-capaz de predecir el abandono de clientes (Customer Churn)
-para una empresa de suscripción digital.
+---
 
-## Dataset utilizado
-IBM Telco Customer Churn Dataset.
+## Objetivo del Proyecto
+El objetivo del proyecto es desarrollar e implementar una solución integral de Machine Learning Operations (MLOps) capaz de predecir el abandono de clientes (Customer Churn) para una empresa de suscripción digital. El sistema abarca desde el entrenamiento del modelo hasta su despliegue en producción mediante contenedores, con monitoreo continuo y una interfaz gráfica de usuario.
 
-## Tecnologías utilizadas
-- Python
+## Dataset Utilizado
+**IBM Telco Customer Churn Dataset.**
+
+---
+
+## Tecnologías Utilizadas
+
+**Modelado y Experimentación:**
+- Python, Pandas, Scikit-learn, Joblib
+- MLflow (Tracking de experimentos)
+- DVC (Versionado de datasets)
 - Jupyter Notebook
-- Pandas
-- Scikit-learn
-- MLflow
-- Joblib
-- DVC
-- Git
 
-## Estructura del proyecto
+**Despliegue e Ingeniería de Software:**
+- FastAPI (API RESTful)
+- Pydantic (Validación estricta de datos)
+- Streamlit (Interfaz Gráfica / Frontend)
+- Pytest (Pruebas unitarias y de integración)
 
-```text
-data/
-models/
-notebooks/
-reports/
-tests/
-README.md
-requirements.txt
-## Reproducibilidad
+**Infraestructura y Monitoreo:**
+- Docker & Docker Compose (Contenerización y Orquestación)
+- Prometheus & Grafana (Monitoreo de métricas en tiempo real)
+- Git & GitHub (Control de versiones)
 
-El proyecto utiliza:
+---
 
-- Git y GitHub para versionado de código
-- MLflow para tracking de experimentos
-- DVC para versionado de datasets
-- requirements.txt para reproducibilidad
-  del entorno
+## Arquitectura del Sistema
 
-## Modelos evaluados
+El despliegue local sigue una arquitectura de microservicios comunicados en una red interna de Docker:
 
-- Logistic Regression
-- Random Forest
+[Usuario/Cliente] ➔ (Puerto 8501) ➔ [GUI Streamlit] ➔ (Red interna HTTP) ➔ [API FastAPI] ➔ [Modelo .pkl]
+                                                                        ↘
+                                                                   [Prometheus/Grafana]
 
-## Métricas utilizadas
+---
 
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- ROC-AUC
+##  Instrucciones de Despliegue (Reproducibilidad)
+
+Para levantar el proyecto completo de manera local, solo es necesario contar con Docker y Docker Compose instalados.
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/SamuFajardo/churn-mlops-project.git](https://github.com/SamuFajardo/churn-mlops-project.git)
+   cd churn-mlops-project

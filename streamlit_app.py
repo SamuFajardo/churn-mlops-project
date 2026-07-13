@@ -83,7 +83,7 @@ num_products = st.number_input(
 
 region = st.selectbox(
     "Región",
-    ["norte", "sur", "este", "oeste"]
+    ["norte", "sur", "centro", "oeste"]
 )
 
 customer_age = st.number_input(
